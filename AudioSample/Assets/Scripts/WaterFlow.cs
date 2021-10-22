@@ -11,7 +11,7 @@ public class WaterFlow : MonoBehaviour
     float lifeSpan;
     // Start is called before the first frame update
     void Start()
-    {
+    {//determines how fast the water flows, in this case i use gravity so its // out
       //  rb = GetComponent<Rigidbody>();
         //rb.AddForce(Vector3.forward * (speed / 2), ForceMode.VelocityChange);
     }
