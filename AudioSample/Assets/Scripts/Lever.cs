@@ -6,7 +6,8 @@ public class Lever : MonoBehaviour
 {
     private HingeJoint hinge;
     [SerializeField]
-    GameObject bubbleGun;
+    GameObject waterFlow;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,9 @@ public class Lever : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hinge.angle == hinge.limits.min)
+        if (hinge.angle == hinge.limits.min)
         {
-            bubbleGun.SetActive(true);
+            waterFlow.SetActive(true);
         }
     }
 }
