@@ -21,6 +21,6 @@ public class ShootScript : MonoBehaviour
     private void FireBullet(ActivateEventArgs arg0)
 
     {
-        Instantiate(bulletPrefab, spawnPoint.transform, false);
+        Instantiate(bulletPrefab, spawnPoint.transform.position, Quaternion.identity);
     }
 }
