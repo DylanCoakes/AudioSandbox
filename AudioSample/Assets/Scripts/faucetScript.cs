@@ -5,29 +5,33 @@ using UnityEngine;
 
 public class CoroutinesExample : MonoBehaviour
 {
-    public float smoothing = 1f;
-    public Transform target;
+    public HingeJoint hinge;
+    public GameObject water;
+    public GameObject waterFlow;
+    public float min;
 
-
-    void Start()
+    void waterSpawn()
     {
-        StartCoroutine(StartWater(target));
+        StartCoroutine(StartWater);
     }
 
+    private void StartCoroutine(Func<Transform, IEnumerator> startWater)
+    {
+        throw new NotImplementedException();
+    }
 
     IEnumerator StartWater(Transform target)
-    {
-        while (Vector3.Distance(transform.position, target.position) > 0.05f)
-        {
-            transform.position = Vector3.Lerp(transform.position, target.position, smoothing * Time.deltaTime);
+    {//when hinge angle is =0 instantiate
+        if (hinge.angle == min)
 
-            yield return null;
+        {//move water to waterflow spawn position.
+            Instantiate(water,waterFlow.transform.position, Quaternion.identity);
+
+           yield return null;
         }
 
-        print("Reached the target.");
+         
 
-        yield return new WaitForSeconds(3f);
-
-        print("MyCoroutine is now finished.");
+        
     }
 }

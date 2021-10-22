@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-    private HingeJoint hinge;
+    public HingeJoint hinge;
     [SerializeField]
-    faucetScript faucetScript;
+    //faucetScript fs;
+    
 
     
    //acessing the hinge component on the lever
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
+       // fs = GameObject("waterFlow").GetComponent<faucetScript>();
     }
 
     //IF IT PASSES THE LIMIT, WATERFLOW IS SET TO ACTIVE
@@ -20,7 +22,7 @@ public class Lever : MonoBehaviour
     {
         if (hinge.angle == hinge.limits.min)
         {
-            faucetScript.StartWater();
+           // Start fs;
         }
     }
 }
