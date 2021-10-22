@@ -8,13 +8,13 @@ public class Lever : MonoBehaviour
     [SerializeField]
     GameObject waterFlow;
     
-    // Start is called before the first frame update
+   //acessing the hinge component on the lever
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
     }
 
-    // Update is called once per frame
+    //IF IT PASSES THE LIMIT, WATERFLOW IS SET TO ACTIVE
     void Update()
     {
         if (hinge.angle == hinge.limits.min)
