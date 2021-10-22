@@ -25,8 +25,8 @@ public class VignetteScript : MonoBehaviour
         continuousMove.action.performed += FadeIn;
         continuousMove.action.canceled += FadeOut;
 
-       // if (volume.profile.TryGet(out Vignette vignette))
-         //   this.vignette = vignette;
+       if (volume.profile.TryGet(out Vignette vignette))
+           this.vignette = vignette;
     }
      //when released fade out
     private void FadeOut(InputAction.CallbackContext obj)
@@ -54,6 +54,6 @@ public class VignetteScript : MonoBehaviour
     //applying the inestity to the vignette
     void ApplyValue(float value)
     {
-        //vignette.intensity
+        vignette.intensity.Override(value);
     }
 }
