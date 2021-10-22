@@ -6,7 +6,8 @@ public class Lever : MonoBehaviour
 {
     private HingeJoint hinge;
     [SerializeField]
-    GameObject waterFlow;
+    faucetScript faucetScript;
+
     
    //acessing the hinge component on the lever
     void Start()
@@ -19,7 +20,7 @@ public class Lever : MonoBehaviour
     {
         if (hinge.angle == hinge.limits.min)
         {
-            waterFlow.SetActive(true);
+            faucetScript.StartWater();
         }
     }
 }
