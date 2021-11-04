@@ -16,13 +16,39 @@ public class ShootBubblesStudent : MonoBehaviour
     private int bubbleAmmo = 10;
     [SerializeField]
     private TextMeshProUGUI ammoText;
+    [SerializeField]
+    InputActionReference relaodAction;
+    private XRBaseInteractor interactor;
+    private ActionBasedController actionController;
     // Start is called before the first frame update
     void Awake()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.activated.AddListener(SpawnBubbles);
+        relaodAction.action.started += Relaod;
     }
+    public void GetInteractor()
+    {//getting the object the player grabs, finding out what hand it is in and populates the value
+        interactor = grabInteractable.selectingInteractor;
 
+    }
+    public void ReleaseInteractor()
+    {
+        interactor = null;
+    }
+    private void Relaod(InputAction.CallbackContext obj)
+    {//when using the secondary button, does it match the controller in the hand and then do something
+        if (obj.control.ToString().Contains("Left") && interactor.name.Contains("Left"))
+        {
+            bubbleAmmo = 10;
+            ammoText.text = bubbleAmmo.ToString();
+        }
+        else if (obj.control.ToString().Contains("Right") && interactor.name.Contains("Right"))
+        {
+            bubbleAmmo = 10;
+            ammoText.text = bubbleAmmo.ToString();
+        }
+    }
 
     private void SpawnBubbles(ActivateEventArgs arg0)
     {
