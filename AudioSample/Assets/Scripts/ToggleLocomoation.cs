@@ -23,10 +23,6 @@ public class ToggleLocomoation : MonoBehaviour
         toggleLocomotion.action.started += ToggleLocomotion;
         
     }
-    private void Start()
-    {
-        tpProvider = GameObject.Find("XR Rig 1").GetComponent<TeleportationProvider>();
-    }
 
     private void ToggleLocomotion(InputAction.CallbackContext obj)
     {
