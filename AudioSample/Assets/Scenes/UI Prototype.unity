@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 170378386}
   - component: {fileID: 170378385}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: right handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 170378384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.3470411, y: 1.085, z: -0.23900008}
-  m_LocalScale: {x: 0.035106372, y: 0.10476622, z: 0.15658084}
+  m_LocalScale: {x: 0.035106372, y: 0.10476622, z: 0.08825522}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 496233538}
   - component: {fileID: 496233537}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,7 +476,7 @@ Transform:
   m_GameObject: {fileID: 496233536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.955, y: 1.1459999, z: -0.23900008}
-  m_LocalScale: {x: 0.8149065, y: 0.027085546, z: 0.15398431}
+  m_LocalScale: {x: 0.8149065, y: 0.027085546, z: 0.055999473}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 515417894}
   - component: {fileID: 515417893}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: left speaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 882188035}
   - component: {fileID: 882188034}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: radio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1249,7 +1249,7 @@ GameObject:
   - component: {fileID: 940587787}
   - component: {fileID: 940587786}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: right speaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1441,7 +1441,7 @@ GameObject:
   - component: {fileID: 1050526642}
   - component: {fileID: 1050526641}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: Antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1808,7 +1808,7 @@ GameObject:
   - component: {fileID: 1368716687}
   - component: {fileID: 1368716686}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: left handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1885,7 +1885,7 @@ Transform:
   m_GameObject: {fileID: 1368716685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.5730413, y: 1.085, z: -0.23900008}
-  m_LocalScale: {x: 0.035106372, y: 0.10476622, z: 0.15658084}
+  m_LocalScale: {x: 0.035106372, y: 0.10476622, z: 0.10548381}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
